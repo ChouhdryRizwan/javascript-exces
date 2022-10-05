@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise no 16</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    let places = ["Makkah", "Turkey", "Germany", "USA", "Dubai"];
+    console.log("-------- Orignal --------");
+    function fav_places() {
+        places.forEach(function (places_name) {
+            console.log(places_name);
+        });
+        console.log("-------- In order --------");
+        const order = places.slice().sort();
+        order.forEach(function (o) {
+            console.log(o);
+        });
+        console.log("-------- After order --------");
+        places.forEach(function (places_name) {
+            console.log(places_name);
+        });
+        console.log("-------- In disorder --------");
+        const dis_order = order.slice().reverse();
+        dis_order.forEach(function (u_o) {
+            console.log(u_o);
+        });
+        console.log("-------- After disorder --------");
+        places.forEach(function (places_name) {
+            console.log(places_name);
+        });
+        console.log("-------- Reverse order  --------");
+        const p_order = places.slice().reverse();
+        p_order.forEach(function (p_o) {
+            console.log(p_o);
+        });
+        console.log("-------- Reverse order again  --------");
+        const o_order = p_order.slice().reverse();
+        o_order.forEach(function (o_o) {
+            console.log(o_o);
+        });
+        console.log("-------- In alphabatic order --------");
+        const f_order = places.sort();
+        f_order.forEach(function (f_o) {
+            console.log(f_o);
+        });
+        console.log("-------- In  reverse alphabatic order --------");
+        const r_order = f_order.reverse();
+        r_order.forEach(function (r_o) {
+            console.log(r_o);
+        });
+    }
+    fav_places();
+
+
+</script>
