@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise no 28</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    const current_users = ["Rizwan", "Jazzel", "Mubashir", "Farrukh", "Farhan"];
+    const new_users = ["Rizwan", "Farrukh", "Hamza", "Asad", "Hina"];
+
+    for (let u = 0; u < new_users.length; u++) {
+        if (current_users.includes(new_users[u])) {
+            console.log(new_users[u] + " will need to enter a new username");
+        } else {
+            console.log(new_users[u] + " username available");
+        }
+    }
+
+</script>
